@@ -53,7 +53,7 @@ class SettingsPage extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 18.h),
                     child: Row(
                       children: [
-                        Icon(Icons.share),
+                        Icon(Icons.follow_the_signs),
                         SizedBox(width: 18.w),
                         Expanded(child: Text('Ikuti Media Sosial Kami')),
                       ],

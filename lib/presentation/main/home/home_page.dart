@@ -7,6 +7,7 @@ import 'package:islam_pedia/generated/assets.gen.dart';
 import 'package:islam_pedia/generated/colors.gen.dart';
 import 'package:islam_pedia/presentation/main/home/data/home_provider.dart';
 import 'package:islam_pedia/presentation/main/home/data/main_menu_model.dart';
+import 'package:islam_pedia/presentation/main/models/hadist_model.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
 class HomePage extends ConsumerWidget {

@@ -12,6 +12,6 @@ class MainMenuModel {
     MainMenuModel(index: 1, title: 'Doa Harian', path: '/dailyprayer'),
     MainMenuModel(index: 2, title: 'Ensiklopedia', path: '/encyclopedia'),
     MainMenuModel(index: 3, title: 'Desain Islami'),
-    MainMenuModel(index: 4, title: 'Hadits'),
+    MainMenuModel(index: 4, title: 'Hadist', path: '/hadistpedia'),
   ];
 }

@@ -40,7 +40,7 @@ class MainApplicationPage extends HookWidget {
           ),
           BottomNavigationBarItem(
             label: "Doa Harian",
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.privacy_tip),
           ),
           BottomNavigationBarItem(
             label: "Ensiklopedia",

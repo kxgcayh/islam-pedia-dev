@@ -67,44 +67,46 @@ class DailyPrayerContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Column(
-        children: data.asMap().entries.map((e) {
-          return Container(
-            decoration: BoxDecoration(
-              color: e.key % 2 == 0
-                  ? Colors.grey.shade100
-                  : Colors.grey.withOpacity(
-                      0.35,
-                    ),
-            ),
-            child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 25.h, horizontal: 18.w),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    e.value.arab,
-                    textAlign: TextAlign.right,
-                    style: TextStyle(
-                      fontSize: 24.sp,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  Text(
-                    e.value.terjemahan,
-                    style: TextStyle(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w300,
-                    ),
-                  ),
-                ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20.w),
+        child: Column(
+          children: data.asMap().entries.map((e) {
+            return Container(
+              decoration: BoxDecoration(
+                color: e.key % 2 == 0
+                    ? Colors.grey.shade100
+                    : Colors.grey.withOpacity(
+                        0.35,
+                      ),
               ),
-            ),
-          );
-        }).toList(),
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 25.h, horizontal: 18.w),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      e.value.arab,
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        fontSize: 24.sp,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      e.value.terjemahan,
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }).toList(),
+        ),
       ),
     );
   }

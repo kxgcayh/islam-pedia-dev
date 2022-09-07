@@ -8,6 +8,7 @@ import 'package:islam_pedia/presentation/main/daily_prayer/daily_prayer_page.dar
 import 'package:islam_pedia/presentation/main/encyclopedia/data/encyclopedia_model.dart';
 import 'package:islam_pedia/presentation/main/encyclopedia/encyclopedia_detail_page.dart';
 import 'package:islam_pedia/presentation/main/encyclopedia/encyclopedia_page.dart';
+import 'package:islam_pedia/presentation/main/home/hadist_pedia_page.dart';
 import 'package:islam_pedia/presentation/main/home/home_page.dart';
 import 'package:islam_pedia/presentation/main/main_application_page.dart';
 import 'package:islam_pedia/presentation/main/settings/settings_page.dart';
@@ -82,6 +83,13 @@ class MyApp extends StatelessWidget {
         path: '/settings',
         builder: (BuildContext context, GoRouterState state) {
           return const SettingsPage();
+        },
+      ),
+      GoRoute(
+        name: 'hadistpedia',
+        path: '/hadistpedia',
+        builder: (BuildContext context, GoRouterState state) {
+          return const HadistPediaPage();
         },
       ),
     ],

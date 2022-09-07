@@ -29,7 +29,10 @@ class HadistModel {
   }
 
   static Future<List<HadistModel>> yasin() async {
-    final file = await rootBundle.loadString(Assets.jsons.yasin);
+    // Beri perintah
+    final file = await rootBundle.loadString(
+      Assets.jsons.yasin,
+    ); // menunggu hasil perintah
     return List<HadistModel>.from(
       jsonDecode(file)["data"].map((x) => HadistModel.fromJson(x)),
     );
